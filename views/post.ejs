@@ -1,0 +1,51 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="form">
+    <form action="/add" method="post">
+        <div class="label">
+            <label for="title">Book Title</label>
+            </div>
+            <div>
+            <input name="title" type="text" placeholder="Book Title" required autocomplete="off">
+            </div>
+            <div>
+            <label for="author">Author</label>
+            </div>
+            <div>
+            <input name="author" type="text" placeholder="Author" required autocomplete="off">
+            </div>
+            <div class="dateandrate">
+            
+            <label for="date">Date Read</label>
+            
+            <input class="date" name="date" type="text" placeholder="__/__/____" required>
+           
+            <label class="rate" for="rate">Rate book:</label>
+        
+            <select class="select" name="rate" id="rate" size="1" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+            <div class="label">
+            <label for="review">Review</label>
+            </div>
+            <div class="textArea">
+            <textarea name="review" placeholder="Write your review..." required></textarea>
+            </div>
+            <div>
+            <input class="submitButton" type="submit" placeholder="Save">
+            </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+<%- include("partials/footer.ejs"); %>

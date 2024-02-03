@@ -1,0 +1,52 @@
+<%- include("partials/header.ejs"); %>
+
+
+
+
+<div class="mainDiv">
+  <div class="order">
+  <span class="ordertext">Order by:</span>
+ <a href="/title">Title</a>
+ <a href="/newest">Newest</a>
+ <a href="/">Rate</a>
+</div>
+ <a></a>
+    <div>
+
+        <ul id="postsList">
+            <% posts.forEach(post=> { %>
+              
+              <li>
+                <div class="showBook">
+                <div class="coverDiv">
+                <img class="cover" src="<%= post.cover %>">
+              </div>
+              <div class="content">
+                <h2 class="titleAuthor">
+                  <%=post.title%> -  <%= post.author %>
+                </h2>  
+                <small>
+                  <%= post.date %>
+                </small>
+                <small class="r">
+                    Rate: <%=post.rate %>/5
+                  </small>
+                <p class="summary">
+                  <%=post.summary%>...
+                </p>
+               
+                <a class="read" href="/show/<%= post.id %>">Read More</a>
+                <a class="edit" href="/edit/<%= post.id %>">Edit</a>
+                <a class="delete" href="/delete/<%= post.id %>">Delete</a>
+                </div>
+                </div>
+              </li>
+            <hr>
+            
+              <% }); %>
+          </ul>
+    </div>
+</div>
+
+
+<%- include("partials/footer.ejs"); %>

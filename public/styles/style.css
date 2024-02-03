@@ -1,0 +1,204 @@
+body {
+  background-color: #E8D8C4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #6D2932;
+}
+
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+.edit, .read {
+  margin-right: 0.5rem;
+}
+
+hr {
+  margin: 1rem;
+}
+
+select {
+  width: 4rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 1.45rem;
+  outline: 0;
+  margin: 1rem;
+}
+
+.nav {
+  background-color: #C7B7A3;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #6D2932;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+a {
+  color: #6D2932;
+}
+
+
+a:visited {
+  color: #561C24;
+}
+
+a:hover {
+  color: #561C24;
+}
+
+a:link {
+  color: #6D2932;
+}
+
+hr {
+  border: 1px solid #C7B7A3;
+  border-radius: 12px;
+}
+
+.addButton {
+  float: right;
+}
+
+.showBook {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.order {
+  text-align: end;
+
+}
+
+.order a {
+  margin-left: 0.5rem;
+}
+
+.ordertext {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.r {
+  margin-left: 1rem;
+}
+
+.cover {
+  width: 180px;
+  height: 271px;
+  margin-right: 2rem;
+}
+
+.content {
+  flex-grow: 2;
+}
+
+.mainDiv {
+  text-align: center;
+  align-self: center;
+  width: 75%; 
+}
+
+.one {
+  margin-top: auto;
+}
+
+.form {
+  text-align: center;
+  align-self: center;
+  margin: 3rem auto;
+  background-color: #C7B7A3;
+  width: 60%;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  padding: 3% 0;
+  border-radius: 20px;
+}
+
+input {
+  border-radius: 12px;
+  width: 75%;
+  height: 3rem;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  outline: 0;
+  padding: 4px 20px 0;
+  margin: 1rem;
+}
+
+.date {
+  width: auto;
+}
+
+.rate {
+  margin-left: 4rem;
+}
+
+textarea {
+  border-radius: 12px;
+  width: 75%;
+  height: 15rem;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  outline: 0;
+  padding: 4px 20px 0;
+  margin: 1rem;
+}
+
+.submitButton {
+  margin-top: 2rem;
+  cursor: pointer;
+  color: #E8D8C4;
+  background-color: #6D2932;
+}
+
+.submitButton:active {
+  background-color: #561C24;
+  color: #E8D8C4;
+}
+
+.submitButton:hover {
+  color: #E8D8C4;
+  background-color: #561C24;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: #C7B7A3;
+}
